@@ -1,11 +1,13 @@
 .card{
-    border-radius: 10px;
-    background-color: lightgrey
+    border-radius: 5px;
+    background-color: black;
+    /* text-align: center; */
 }
 
 .search-list{
-    border-radius: 15px;
-    background-color: lightblue
+    border:none;
+    background-color: white;
+    
 }
 
 .saveBook {
@@ -16,4 +18,23 @@
 .viewBook {
     border-radius: 5px;
     margin-left: 5px
+}
+
+.search-list.list-group-item{
+margin-top: 10px;
+padding: 10px;
+}
+
+img{
+    margin: 20px;
+    width:150px;
+    height:200px;
+}
+
+button{
+    border:none;
+    background-color:lightcoral ;
+    color:white;
+    height:25px;
+    width:100px
 }

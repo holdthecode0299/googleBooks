@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import API from "../API/api";
-import Jumbotron from "../components/Jumbotron";
 import { Container, Row, Col } from "../components/Grid";
 import SearchForm from "../components/SearchForm";
 import SearchResult from "../components/SearchResult"
@@ -61,14 +60,12 @@ class SearchBooks extends Component {
         savedBooks = savedBooks[0];
         API.saveBook(savedBooks)
             .then(this.setState({ message: alert("Your book is saved") }))
+            // logic for displaying saved book in Saved List
             .catch(err => console.log(err))
     }
     render() {
         return (
             <Container fluid>
-                <Jumbotron>
-                    <h1 className="text-white">Find Your Favorite Books with Google Book Search</h1>
-                </Jumbotron>
                 <Container>
                     <Row>
                         <Col size="12">
